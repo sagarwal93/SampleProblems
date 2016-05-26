@@ -3,6 +3,7 @@ package Main;
 /**
  * Created by Samarth on 5/24/16.
  */
+
 public class SquareRoot {
 
     public static double getSquareRoot(double num, double tolerance) {
@@ -14,7 +15,7 @@ public class SquareRoot {
         return getSquareRootHelper(num, 0, num, tolerance);
     }
 
-    public static double getSquareRootHelper(double num, double min, double max, double tolerance) {
+    private static double getSquareRootHelper(double num, double min, double max, double tolerance) {
 
         double rt = (min + max)/2;
         double sqr = rt*rt;
