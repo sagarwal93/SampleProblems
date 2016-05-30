@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by Samarth on 5/28/16.
  */
-public class SimpleArraySum {
+public class VeryBigSum {
 
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
@@ -14,16 +14,16 @@ public class SimpleArraySum {
         int count;
         count = in.nextInt();
 
-        int arr[] = new int[count];
+        long arr[] = new long[count];
         for(int i = 0; i < count; i++) {
-            arr[i] = in.nextInt();
+            arr[i] = in.nextLong();
         }
 
-        System.out.println(getSimpleArraySum(arr));
+        System.out.println(getVeryBigSum(arr));
     }
 
-    public static int getSimpleArraySum(int[] arr) {
-        int sum = 0;
+    public static long getVeryBigSum(long[] arr) {
+        long sum = 0;
 
         for (int idx = 0; idx < arr.length; idx ++) {
             sum += arr[idx];
